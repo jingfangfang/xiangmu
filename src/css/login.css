@@ -1,0 +1,58 @@
+.photo {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/2.jpg");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: -300px 0;
+    overflow: hidden;
+}
+
+.top img {
+    display: block;
+    width: 100%;
+    height: 558px;
+    float: left;
+    margin: 0 auto;
+}
+
+.top h2 {
+    float: left;
+    line-height: 130px;
+    margin-left: 30px;
+}
+
+.login1 .deng {
+    width: 400px;
+    height: 400px;
+    background: white;
+    margin-left: 900px;
+    margin-top: 30px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.login1 .deng p {
+    font-size: 24px;
+    margin-top: 80px;
+}
+
+.login1 .deng input {
+    width: 220px;
+    height: 30px;
+    font-size: 20px;
+}
+
+.login1 .deng p:nth-child(2) {
+    margin-top: 30px;
+}
+
+.login1 .deng button {
+    width: 280px;
+    height: 50px;
+    margin-top: 60px;
+    background: red;
+    color: white;
+    border: 0;
+    font-size: 30px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/detail.css">
+</head>
+
+<body>
+    <h1>详情页</h1>
+    <!-- 范围元素 -->
+    <div class="box">
+        <!-- 展示图片的盒子 -->
+        <div class="show">
+            <img src="https://image3.suning.cn/uimg/b2c/newcatentries/0070155630-000000000670655995_1_800x800.jpg" alt="">
+            <!-- 遮罩层盒子 -->
+            <div class="mask "></div>
+        </div>
+        <!-- 切换列表盒子 -->
+
+        <!-- 放大镜盒子 -->
+        <div class="enlarge "></div>
+    </div>
+    <script src="./assets/jquery/jquery.min.js"></script>
+    <script src="./js/detail.js "></script>
+    <script>
+        const e = new Enlarge('.box')
+        console.log(e)
+    </script>
+</body>
+
+</html>

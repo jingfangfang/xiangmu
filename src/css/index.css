@@ -1,0 +1,273 @@
+.top {
+    width: 100%;
+    height: 60px;
+    background: rgb(51, 51, 51);
+}
+
+.top .center {
+    display: flex;
+    justify-content: space-between;
+    line-height: 60px;
+}
+
+.top a {
+    font-size: 16px;
+    color: rgb(176, 176, 176);
+    padding: 0 5px;
+}
+
+.top a:hover {
+    color: white;
+    text-decoration: none
+}
+
+.nav {
+    height: 100px;
+    display: flex;
+    flex: 1;
+}
+
+.nav a img {
+    display: inline-block;
+    margin-top: 20px;
+    background: rgb(255, 103, 0);
+    width: 100%;
+    height: 100%;
+}
+
+.cent {
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cent a {
+    color: rgb(51, 51, 51);
+    font-size: 18px;
+}
+
+.cent a:hover {
+    color: rgb(255, 103, 0);
+    text-decoration: none;
+}
+
+.nav .inp {
+    margin-top: 30px;
+    font-size: 0;
+    z-index: 100;
+}
+
+.nav .inp input {
+    font-size: 20px;
+    width: 300px;
+    height: 34px;
+    border: none;
+    padding: 5px;
+    border: 1px solid rgb(51, 51, 51);
+    outline: none;
+}
+
+.nav .inp .ico {
+    outline: none;
+    font-size: 14px;
+    width: 40px;
+    height: 34px;
+    line-height: 34px;
+    border: 1px solid rgb(51, 51, 51);
+    border-left: none;
+    padding: 0 5px;
+    text-align: center;
+    color: #000;
+}
+
+.nav .inp ol {
+    width: 300px;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    border-top: none;
+    display: none;
+    font-size: 22px;
+    position: relative;
+    top: 20px;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav .inp ol>li {
+    background-color: white;
+    height: 30px;
+    line-height: 30px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.nav .inp ol>li:hover {
+    background-color: #ccc;
+    color: #fff;
+}
+
+h1 a {
+    width: 150px;
+    height: 150px;
+    background: rgb(255, 103, 0);
+    /* background-color: rgb(51, 51, 51); */
+    /* opacity: .5; */
+    display: block;
+    margin: 50px;
+    color: rgb(51, 51, 51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+h1 a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* 轮播图 */
+
+.banner {
+    margin-top: 500px;
+    width: 1220px;
+    height: 400px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner>.imgBox {
+    width: 400%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex: 1;
+}
+
+.banner>.imgBox>li {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    color: #fff;
+    width: 100%;
+}
+
+.banner>.imgBox>li img {
+    height: 100%;
+    width: 100%;
+}
+
+.banner>.pointBox {
+    width: 200px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    border-radius: 15px;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.banner>.pointBox>li {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.banner>.pointBox>li.active {
+    background-color: cyan;
+}
+
+.banner>.leftRight {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner>.leftRight>div {
+    width: 40px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* 瀑布流 */
+
+.content {
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.content>ul {
+    width: 340px;
+    margin: 0 10px;
+    float: left;
+}
+
+.content>ul>li {
+    border: 1px solid #333;
+    background-color: #fff;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.content>ul>li:last-child {
+    margin-bottom: 0;
+}
+
+.content>ul>li>.top {
+    width: 100%;
+}
+
+.content>ul>li>.bottom {
+    height: 150px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content>ul>li>.bottom>.author {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.content>ul>li>.bottom>.author>.avatar {
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+    margin-right: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}

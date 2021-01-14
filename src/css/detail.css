@@ -1,0 +1,58 @@
+/* div img {
+    width: 200px;
+    height: 200px;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.box {
+    width: 450px;
+    height: 450px;
+    border: 1px solid #333;
+    margin: 50px;
+    display: flex;
+    position: relative;
+}
+
+.box>.show {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    /* cursor: none; */
+}
+
+.box>.show>.mask {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    opacity: .5;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    /* 表示该元素永远不作为事件目标使用 */
+    pointer-events: none;
+    /* display: none; */
+}
+
+.box>.enlarge {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 110%;
+    top: 0;
+    border: 1px solid red;
+    /* background-image: url(https://image3.suning.cn/uimg/b2c/newcatentries/0070155630-000000000670655995_1_800x800.jpg); */
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 800px 800px;
+    /* display: none; */
+}

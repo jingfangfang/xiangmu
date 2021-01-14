@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.center{
+    width: 1440px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+ol,ul,li{
+    list-style: none;
+}
